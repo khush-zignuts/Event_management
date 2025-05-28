@@ -218,7 +218,3 @@ You can customize the layout and branding as needed.
 
 
 ```
-
----
-
-Would you like a matching `README.md` for the **Organizer-Service** as well?
