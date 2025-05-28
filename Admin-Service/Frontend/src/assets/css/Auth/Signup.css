@@ -1,0 +1,160 @@
+/* Signup.css - Add this to your project in the css/Auth directory */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f3f4f6;
+  color: #374151;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form container */
+.signup-form {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Input groups */
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.input:focus-within {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.input svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+  color: #9ca3af;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.input input::placeholder {
+  color: #9ca3af;
+}
+
+/* Validation styles */
+.validator-hint {
+  font-size: 0.875rem;
+  color: #ef4444;
+  margin-top: -0.75rem;
+  margin-left: 0.5rem;
+}
+
+.validator-hint.hidden {
+  display: none;
+}
+
+input:invalid:focus + .validator-hint,
+input:invalid:not(:placeholder-shown) + .validator-hint {
+  display: block;
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-neutral {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+}
+
+.btn:hover {
+  background-color: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* Error message */
+.signup-form p:last-child {
+  color: #ef4444;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Form header */
+.form-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-header p {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Additional helper class for button container */
+.signup-form .bg-white {
+  background-color: transparent;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .signup-form {
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+}
+.signin-link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}

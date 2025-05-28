@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Acceptance Ticket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7e9;
+      margin: 0;
+      padding: 20px;
+      color: #2c3e50;
+    }
+
+    .ticket {
+      background-color: #b6f7a3;
+      border: 3px dashed #2ecc71;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8e44ad;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    .info {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+    .organizer,
+    .attendee {
+      margin-top: 20px;
+      background-color: #aaf1a4;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .chat-note {
+      margin-top: 20px;
+      font-size: 14px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px dashed #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket">
+
+    
+    <div class="logo">Issued by<br><span style="color:#e74c3c;">The Event Management Team</span></div>
+    <div class="section-title">{{eventTitle}}</div>
+    <div class="info"><em>is scheduled on</em></div>
+    <div class="info">📅 Date: {{eventDate}}</div>
+    <div class="info">⏰ Start Time: {{eventStartTime}}</div>
+    <div class="info">📍 Venue: {{eventVenue}}</div>
+
+    <div class="organizer">
+      <strong>Organizer</strong><br>
+      Name: {{organizerName}}<br>
+    </div>
+
+    <div class="attendee">
+      <strong>Attendee</strong><br>
+      Name: {{userName}}<br>
+      Phone: {{userPhone}}
+    </div>
+
+    <div class="chat-note">
+      If you have any questions,<br>
+      feel free to reach out to the organizer,<br>
+      <strong>{{organizerName}}</strong> via the chat button provided.
+    </div>
+
+      <div class="footer">
+    <p>The Event Management Team</p>
+  </div>
+  </div>
+</body>
+</html>
+
+
+

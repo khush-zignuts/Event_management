@@ -1,0 +1,121 @@
+.dashboard-header {
+  padding: 16px 20px;
+}
+
+.welcome-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  font-size: 14px;
+  width: 250px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.create-event-btn,
+.book-button,
+.logout-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-event-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.book-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.chat-button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #138496;
+}
+.event-card {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px 0;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  /* background-color: white; */
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event-card-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.event-card-header p {
+  font-size: 14px;
+  color: #666;
+}
+.event-card-body {
+  margin-top: 10px;
+}
+.event-card-body p {
+  font-size: 16px;
+  color: #333;
+}
+.event-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.event-card-footer button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

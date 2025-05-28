@@ -1,0 +1,136 @@
+.notifications-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.notifications-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.filter-dropdown {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-item {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-left: 6px solid #6c757d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notification-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.notification-message {
+  background-color: #e3f2fd; /* Light blue */
+  color: #0d47a1;            /* Deep blue text */
+  font-size: 1.1rem;         /* Bigger text */
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+
+.notification-type {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Type-specific styles */
+.notification-item.event {
+  border-left-color: #4caf50;
+}
+.notification-item.announcement {
+  border-left-color: #2196f3;
+}
+.notification-item.reminder {
+  border-left-color: #ff9800;
+}
+
+.notification-type.event {
+  color: #4caf50;
+}
+.notification-type.announcement {
+  color: #2196f3;
+}
+.notification-type.reminder {
+  color: #ff9800;
+}
+
+/* No notifications message */
+.no-notifications {
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+}
+
+/* Pagination */
+.pagination-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.page-button {
+  margin: 0 0.5rem;
+}
+
+.back-button {
+  background-color: #6c757d;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
